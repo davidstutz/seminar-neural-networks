@@ -1,0 +1,11 @@
+\section{Conclusion}
+
+In the course of this paper we introduced the general concept of artificial neural networks and had a closer look at the multilayer perceptron. We discussed several activation functions and network topologies and explored the expressive power of neural networks.
+
+Section \ref{sec:network-training} introduced the basic notions of network training. We focussed on supervised training. Therefore, we introduced two different error measure to evaluate the performance of the network in respect to function approximation. To train the network we introduced gradient descent as iterative parameter optimization algorithm as well as Newton's method as second-order optimization algorithm. The weights of the network are adjusted iteratively to minimize the chosen error measure. To evaluate the gradient of the error measure we introduced the error backpropagation algorithm. We extended this algorithm to allow the exact evaluation of the Hessian, as well.
+
+Thereafter, we discussed the classification problem using a statistical approach. Based on maximum likelihood estimation we derived the cross-entropy error measure for multiclass classification. As application we considered digit recognition based on the MNIST dataset using a two-layer perceptron.
+
+Unfortunately this paper is far too short to cover the extensive topic of neural networks and their application in pattern recognition. Especially for network training there are more advanced techniques available (see for example \cite{Bishop:1995}). Instead of the exact evaluation of the Hessian described in \cite{Bishop:1992}, approximations to the Hessian or its inverse are more efficient to compute (for example described in \cite{Bishop:1995}). Based on a diagonal approximation of the Hessian there are advanced regularization methods as for example the Optimal Brain Damage algorithm \cite{LeCunDenkerSolla:1990}.
+
+In conclusion, artificial neural networks are a powerful tool applicable to a wide range of problems especially in the domain of pattern recognition.

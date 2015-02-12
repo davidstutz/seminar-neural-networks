@@ -1,0 +1,122 @@
+\documentclass[twoside,11pt,a4paper]{article}
+
+\usepackage{graphicx,curves,float,rotating}
+\usepackage{amsmath, amssymb, latexsym}
+\usepackage{amsopn}
+\usepackage{theorem}
+\usepackage{dcolumn}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{sidecap}
+\usepackage{subfigure}
+\usepackage{pgfplots}
+\usepackage[toc,page]{appendix}
+
+\usepackage{tikz} % figures and diagrams
+\usetikzlibrary{decorations.pathreplacing} % braces for tikz
+
+\usepackage{xspace}
+\makeatletter 
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+\def\eg{{e.g}\onedot} \def\Eg{{E.g}\onedot}
+\def\ie{{i.e}\onedot} \def\Ie{{I.e}\onedot}
+
+% Define colors used for listings
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\usepackage{listings}
+\lstset{%
+numbers=left,
+frame=none,
+basicstyle=\footnotesize\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+numbersep=15pt,tabsize=4,
+flexiblecolumns=true,
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen}, 
+stringstyle=\color{mauve},
+numberstyle=\tiny\color{gray},
+language=Matlab,
+breaklines=true,
+breakatwhitespace=true,
+morekeywords={*,num,String,var,library,get,set} ,
+}
+
+\pagestyle{headings}
+\textwidth 15cm
+\textheight 23cm
+\oddsidemargin 1cm
+\evensidemargin 0cm
+%\parindent 0mm
+
+\begin{document}
+\nocite{*} % Show references without needing to cite.
+
+\pagestyle{empty}
+
+\begin{center}
+
+    RWTH Aachen University\\
+    Chair of Computer Science 6\\
+    Prof. Dr.-Ing. Hermann Ney\\[6ex]
+    Selected Topics in Human Language Technology and Pattern Recognition WS 13/14\\[12ex]
+   
+    \LARGE
+    \textbf{Introduction to Neural Networks} \\[6ex]
+    \textit{David Stutz} \\[6ex]
+    \Large
+    February 10, 2014
+
+    \vfill
+    \Large Adviser: Pavel Golik
+	    
+\end{center}
+
+\newpage
+\newpage
+
+\pagestyle{headings}
+\tableofcontents
+\listoftables
+\listoffigures
+\newpage
+\pagestyle{empty}
+
+\newpage
+\pagestyle{headings}
+
+\include{abstract}
+
+\newpage
+
+\include{motivation}
+
+\newpage
+
+\include{neural-network}
+
+\newpage
+
+\include{network-training}
+
+\newpage
+
+\include{pattern-recognition}
+
+\newpage
+
+\include{conclusion}
+
+\newpage
+
+\include{appendix}
+
+\addcontentsline{toc}{section}{Literature}
+\bibliographystyle{plain}
+\bibliography{seminar}
+
+\end{document}

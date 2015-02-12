@@ -1,0 +1,18 @@
+\section{Motivation}
+\label{sec:motivation}
+
+Theoretically, the human brain has a very low rate of operations per second when compared to a state of the art computer \cite[p.~28]{Haykin:2005}. Nevertheless, all computers are still outraveled by the human brain considering an important factor: \textbf{learning}. The human brain is able to learn how to perform certain tasks based on experience and prior knowledge.
+
+\textbf{How to teach computers to learn?} To clarify the term ``learning'' in respect to computers we assume a set of training data $T = \{(x_n, t_n) : 1 \leq n \leq N\}$ for some $N \in \mathbb{N}$ and an arbitrary target function $g$ of which we know the target values $t_n := g(x_n)$. Our goal is to teach the computer a reasonably good approximation of $g(x)$ for $x$ in the domain of $g$. Many classification\footnote{The classification problem can be stated as follows: Given a $D$-dimensional input vector $x$ assign it to one of $C$ discrete classes (see section \ref{sec:pattern-recognition}).} and regression\footnote{The regression problem can be described as follows: Given a $D$-dimensional input vector $x$ predict the value of $C$ continuous target values.} problems can be formulated this way. The target function may even be unknown.
+
+Considering noise within the given training data such that we only have a value $t_n \approx g(x_n)$ we require an additional property that we call \textbf{ability for generalization}. Solving the problem by interpolation may result in exact values $g(x_n)$ but may be a very poor approximation of $g(x)$ in general. This phenomenon is called over-fitting of the underlying training data.
+
+\subsection{Historical Background and Bibliographical Notes}
+
+In 1943 McCulloch and Pitts introduced the first mathematical models concerning networks of neurons we call artificial neural networks. But this first step did not include any results on network training \cite[p.~333-335]{DudaHartStork:2001}.
+
+The first work on how to train similar networks was Rosenblatt's perceptron in 1958 which we discuss in section \ref{subsec:perceptron} \cite{Rosenblatt:1958}. Only ten years later Minsky and Papert showed that Rosenblatt's perceptron hat many limitations as we see in section \ref{subsec:expressive-power} and can only model linearly separable\footnote{Considering a classification problem as introduced in section \ref{sec:pattern-recognition} we say a set of data points is not linearly separable if the classes can not be separated by a hyperplane \cite[p.~179]{Bishop:2006}.} problems of classification \cite[p.~333-335]{DudaHartStork:2001}.
+
+In \cite{RumelhartHintonWilliams:1986} Rumelhart, Hinton and Williams introduced the idea of error backpropagation for pattern recognition. In the late 80's it was shown that non linearly separable problems can be solved by multilayer perceptrons \cite{HornikStinchcombeWhite:1989}.
+
+Weight decay was introduced in \cite{Hinton:1986}. A diagonal approximation of the Hessian was introduced in \cite{LeCun:1987}. A pruning method based on diagonal approximation of the Hessian is called Optimal Brain Damage and discussed in \cite{LeCunDenkerSolla:1990}. The exact evaluation of the Hessian is discussed in \cite{Bishop:1992}.
