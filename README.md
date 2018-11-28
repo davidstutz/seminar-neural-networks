@@ -2,7 +2,7 @@
 
 This repository contains code and paper corresponding the the seminar paper:
 
-D. Stutz. **Introduction to Neural Networks.** Seminar Report, Selected Topics in Human Language Technology and Pattern Recognition, RWTH Aachen University, 2016.
+D. Stutz. **Introduction to Neural Networks.** Seminar Report, Human Language Technology and Pattern Recognition Group, RWTH Aachen University, 2014.
 
 Advisor: Pavel Golik
 
