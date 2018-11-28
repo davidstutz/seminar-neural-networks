@@ -1,18 +1,10 @@
 # Introduction to Neural Networks
 
-"Introduction to Neural Networks"
+This repository contains code and paper corresponding the the seminar paper:
 
-Seminar 2013/2014: "Selected Topics in Human Language Technology and Pattern Recognition"
-
-Chair of Computer Science 6 - Human Language Technology and Pattern Recognition
-
-Prof. Dr.-Ing. Hermann Ney.
+D. Stutz. **Introduction to Neural Networks.** Seminar Report, Selected Topics in Human Language Technology and Pattern Recognition, RWTH Aachen University, 2016.
 
 Advisor: Pavel Golik
-
-RWTH Aachen University
-
-[https://www-i6.informatik.rwth-aachen.de/web/Teaching/Seminars/SS14/HLT-PR/index.php](https://www-i6.informatik.rwth-aachen.de/web/Teaching/Seminars/SS14/HLT-PR/index.php)
 
 ## License
 
